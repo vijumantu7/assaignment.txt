@@ -1,0 +1,137 @@
+
+//My resume in json format
+var resume = {
+    "personalDetails":{
+    "name":"vijay mahantesh",
+     "mobileNum":"8618383977",
+     "email":"vijumantu@gmail.com",
+    },
+    "education":{
+        "sslc":{
+            "SchoolName":"svm High School",
+            "university":"KSSEB",
+            "Percentage":"70.08",
+        },
+        "DiplomaInCs":{
+            "Collegename":"CVC RPH",
+            "university":"DTE",
+            "percentage":"65",
+        }
+    },
+        "hoobies":"mimicry,Script writing",
+        "projectDone":"Hotel Managment System",
+        "otherInfo":{
+            "fatherName":"Guru",
+            "motherName":"Prbhawati",
+            "nationality":"Indian",
+            "languagesKnown":"English,Hindi,Kannada",
+
+        }
+    }
+
+console.log(resume);
+
+
+// how to compare two JSON have the same properties without order?
+var obj1 = { name: "hanuman", age:5 };
+var obj2 = { age:10, name: "Ram" };
+ let comp=JSON.stringify(obj1)==JSON.stringify(obj2);
+ console.log(comp);
+
+ //practise problems
+
+ //Finding square of two numbers
+
+ var n=prompt("enter number to find its square")
+ function sqr(numb){
+     numb=n*n;
+     console.log("the square of number "+ n +" is "+numb);
+     return numb;
+ }
+ sqr(n);
+
+ //swapping two numbers
+ var n1=prompt("eneter num1")
+ var n2=prompt("eneter num2")
+ var c=n2;
+ n2=n1;
+console.log("after swapping num1 is "+c+" and num2 is "+n2);
+   
+//  Addition of 3 numbers
+let a, b, c;
+a = prompt("enter numb1");
+b = prompt("enter numb2");
+c = prompt("enter numb3");
+var sum= parseInt(a)+parseInt(b)+parseInt(c)
+console.log("the sum of three number is " + +sum);
+
+
+// Celsius to Fahrenheit conversion
+var celsius = prompt("enter celsius");
+var fahrenheit = (celsius * 9 / 5) + 32
+console.log(celsius + " celsius is equal to "+fahrenheit+" fahrenheit");
+
+// Meter to miles
+var meter = prompt("enter meters to convert to miles")
+var miles = Number(meter / 1609).toFixed(5);
+console.log(meter + " is equal to " + miles + " miles");
+
+// Pounds to kg
+var Pounds = prompt("enter pounds to convert to kg")
+var kg = Number(Pounds / 2.205).toFixed(3);
+console.log(Pounds + " is equal to " + kg + " kg");
+
+// Calculate Batting Average
+var run = prompt("eneter the runs scored");
+var out = prompt("eneter innings played or got out");
+var average = Number(run / out).toFixed(2);
+console.log("the batting average is :"+ average)
+
+// Power of any number x ^ y.
+var base = prompt("Enter the base number");
+var pow = prompt("Enter the power");
+var res=1;
+for (var i = 1; i <= pow; i++){
+  
+     res = (res*base);
+}
+
+console.log("the power of "+base + " raised to "+ pow+ " is "+res);
+
+// Calculate Simple Interest
+var p = prompt("enter the principal amount");
+var t = prompt("enter the time");
+var r = prompt("enter the rate of intrest");
+function simpleIntrest(p, t, r) {
+    var si = (p * t * r) / 100
+    console.log("the simple intrest is "+si);
+    return si;
+}
+simpleIntrest(p, t, r);
+
+
+// Calculate area of an equilateral triangle
+var side=prompt("eneter the side of eqilateral triangle")
+var areaOfEqu=((1.732 / 4) * 5*5);
+console.log(areaOfEqu);
+
+// calculate area of isolace triangle
+var h = prompt("enter the height of the triangle");
+var b = prompt("enter the base of the triangle");
+var area = ((h * b) / 2);
+console.log(area);
+
+// // calculate the volume of sphere
+var r = prompt("enter the radius of sphere");
+var volume = Number((4 / 3) * 3.142 * (r * r * r)).toFixed(1);
+console.log(volume);
+
+
+//to calculate diameter, circumferance and area of circle
+var r = prompt("enter the radius of the circle");
+var diameter = 2 * r;
+console.log("the diameter of the circle is " + diameter);
+var areaOfCircle = (3.142 * (r * r));
+console.log("the area of circle is " + areaOfCircle);
+var circum =Number((2 * 3.142 * r)).toFixed(2);
+console.log("the circumferance of circle is " + circum);
